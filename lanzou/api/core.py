@@ -93,7 +93,7 @@ class LanZouCloud(object):
         """解除官方限制"""
         logger.warning("*** You have enabled the big file upload and filename disguise features ***")
         logger.warning("*** This means that you fully understand what may happen and still agree to take the risk ***")
-        self._limit_mode = False
+        self._limit_mode = True
 
     def set_max_size(self, max_size=100) -> int:
         """设置单文件大小限制(会员用户可超过 100M)"""
